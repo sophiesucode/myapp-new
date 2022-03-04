@@ -1,0 +1,72 @@
+<h1 id="page-title">Post Job</h1>
+
+<div class="post-job">
+
+<form [formGroup]="jobForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+  <label for="title" class="form-control">
+  Job title:
+  <input type="text" formControlName="title" required>
+</label>
+</div>
+<br>
+<div class="mb-3">
+  <label for="experience_level" class="form-control">
+    Experience level:
+    <input type="text" formControlName="experience_level" required>
+  </label>
+</div>
+<br>
+<div class="mb-3">
+  <label for="salary" class="form-control">
+    Salary:
+    <input type="number" formControlName="salary">
+    </label>
+</div>
+<br>
+<div class="mb-3">
+  <label for="location" class="form-control">
+    location:
+    <input type="text" formControlName="location">
+    </label>
+    </div>
+<br>
+<div class="mb-3">
+  <label for="company" class="form-control">
+  company name:
+    <input type="text" formControlName="company">
+    </label>
+    </div>
+<br>
+<div class="mb-3">
+  <label for="url" class="form-control">
+    Job link:
+    <input type="text" formControlName="url">
+    </label>
+    </div>
+<br>
+<div class="mb-3">
+  <label for="img_url" class="form-control">
+    logo url:
+    <input type="text" formControlName="img_url">
+  </label>
+  </div>
+<br>
+  <div class="mb-3">
+  <label for="job-description" class="form-label">
+    Job Description:
+    <textarea formControlName="job_description"></textarea>
+   </label>
+  </div>
+ <br>
+
+  <button type="submit" class="submit-job">Submit</button>
+ 
+
+   
+
+</form>
+
+</div>  
+
+
